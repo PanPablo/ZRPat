@@ -4,6 +4,7 @@
             <div class="footer parallax">
                 <div class="footerContent">
                     <div class="logo">Zespół Rzeczników<br>Patentowych 2017<br>Created by PabloWebDesign</div>
+                    <div><?php do_action('wpml_add_language_selector');?></div>
                     <div class="adress">
                         ul.Nowowiejska 1/3 lok. 9<br>
                         00-000 Warszawa

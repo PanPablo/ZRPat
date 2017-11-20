@@ -19,11 +19,8 @@
                         <div class="menu">
 <!--                            --><?php //wp_nav_menu(['menu' => 'main']); ?>
                             <ul>
-                                <li class="about"><a>O FIRMIE</a>
-
-                                </li>
-                                <li><a href="">USŁUGI</a>
-                                </li>
+                                <li class="about"><a>O FIRMIE</a></li>
+                                <li><a href="http://localhost/zrpat/index.php/uslugi/">USŁUGI</a></li>
                                 <li><a href="http://localhost/zrpat/index.php/kontakt/">KONTAKT</a></li>
                             </ul>
                             <div class="fullMenu">
@@ -55,7 +52,7 @@
                 <div class="menuMobile">
                     <ul>
                         <li><a href=" http://localhost/zrpat/index.php/o-nas/">O NAS</a></li>
-                        <li>USŁUGI</li>
+                        <li><a href="http://localhost/zrpat/index.php/uslugi/">USŁUGI</a></li>
                         <li><a href="http://localhost/zrpat/index.php/kontakt/">KONTAKT</a></li>
                         <li><a href=" http://localhost/zrpat/index.php/rzecznicy/">RZECZNICY</a></li>
                         <li><a href="http://localhost/zrpat/index.php/klienci/ ">NASI KLIENCI</a></li>
