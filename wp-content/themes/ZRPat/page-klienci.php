@@ -1,0 +1,46 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: pawelstruminski
+ * Date: 19.11.2017
+ * Time: 02:20
+ */
+?>
+
+<?php get_header(); ?>
+<section class="singlePage">
+    <div class="singlePageContainer">
+        <h2>NASI KLIENCI</h2>
+        <div class="blueLine"></div>
+        <?php
+
+        $q = new WP_Query([
+            'post_type' => 'client',
+            'posts_per_page' => 10,
+            'order' => 'ASC',
+
+        ]);
+
+        if ( $q->have_posts() ) : while ( $q->have_posts() ) : $q->the_post(); ?>
+            <!-- post -->
+            <div class="row">
+                <div class="col-6-6">
+                    <div class="sectionX att">
+                        <h2><?php the_post_thumbnail(); ?></h2>
+<!--                        <h2>--><?php //the_title()?><!-- </h2>-->
+                        <span><?php the_content() ?></span>
+                        <div class="blueLine"></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        <?php endwhile; ?>
+            <!-- post navigation -->
+        <?php else: ?>
+            <!-- no posts found -->
+        <?php endif;
+
+        ?>
+    </div>
+    <?php get_footer(); ?>
+
