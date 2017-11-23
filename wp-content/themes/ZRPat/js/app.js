@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 //karuzela
     var slides = document.querySelectorAll('.slide');
     var currentSlide = 0;
-    var slideInterval = setInterval(nextSlide,3000);
+    var slideInterval = setInterval(nextSlide,2500);
 
     function nextSlide() {
         goToSlide(currentSlide+1);
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     function initMap() {
 
-        var uluru = {lat: parseFloat(52.219634), lng: parseFloat(21.0161633)};
+        var uluru = {lat: parseFloat(52.219634), lng: parseFloat(21.0143851)};
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 16,
             center: uluru

@@ -46,7 +46,7 @@
                         <li class="slide">Znaki<br>towarowe</li>
                         <li class="slide">Wzory<br>przemysłowe</li>
                         <li class="slide">Patenty<br>europejskie</li>
-                        <li class="slide" id="erka">&reg;</li>
+<!--                        <li class="slide" id="erka">&reg;</li>-->
                     </ul>
                 </div>
                 <div class="menuMobile">

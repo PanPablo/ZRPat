@@ -1,6 +1,7 @@
 @import "_grid.scss";
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Raleway:800');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
 
 @for $i from 1 through 6 {
   .section#{$i} {
@@ -10,11 +11,24 @@
 
   }
 }
+
+
 body {
   font-family: 'Raleway', sans-serif;
   margin: 0;
   width: 100%;
 
+}
+
+span {
+  font-size: 16px;
+}
+
+a {
+  color: rgba(9, 158, 215, 0.8);
+}
+a:active {
+  color: rgba(9, 158, 215, 0.8);
 }
 //sekcja1
 
@@ -61,7 +75,7 @@ body {
 }
 
 .menuMobile li {
-  color: white;
+  color: rgb(24, 74, 189);
   font-size: 1.5em;
   margin-left: 5px;
   margin-bottom: 30px;
@@ -121,14 +135,14 @@ body {
 
 .logo {
   font-weight: lighter;
-  color: white;
+  color: rgba(9, 158, 215, 0.8);
   font-size: 0.9em;
   margin-left: 10px;
 
 }
 .menu {
   opacity: 1;
-  color: white;
+  color: rgba(9, 158, 215, 0.8);
   font-size: 0.8em;
   display: none;
 }
@@ -138,7 +152,7 @@ a {
 }
 
 a:visited {
-  color: white;
+  color: rgba(9, 158, 215, 0.8);
 }
 
 .menu ul{
@@ -168,7 +182,6 @@ a:visited {
 .slider {
   width: 300px;
   height: 300px;
-  margin: 20px;
   position:relative;
   -webkit-transition: opacity 1s;
   -moz-transition: opacity 1s;
@@ -181,29 +194,28 @@ a:visited {
 }
 
 .slide {
-  padding-top: 25px;
-  color: rgba(245, 177, 32, 0.9);
-  font-size: 40px;
-  font-weight: 800;
+  font-family: 'Fredericka the Great', cursive;
+  color: rgba(5, 61, 199, 0.7);
+  font-size: 35px;
+  font-weight: 500;
   list-style: none;
   opacity: 0;
   z-index: 1;
   position:absolute;
-  top: 20px;
-  left:20px;
+    top: 20px;
+    left: 20px;
   -webkit-transition: opacity 1s;
   -moz-transition: opacity 1s;
   -o-transition: opacity 1s;
   transition: opacity 1s;
 
 }
-#erka {
-  font-size: 170px;
-  margin: 0;
-  padding: 15px;
-  padding-top: 30px;
 
+#erka {
+  font-size: 5px;
+  margin: 0;
 }
+
 .showing {
   opacity: 1;
   z-index: 2;
@@ -213,7 +225,7 @@ a:visited {
 .main {
   display: flex;
   justify-content: center;
-  background: rgb(229, 229, 229);
+  background: rgb(249, 249, 249);
   font-size: 14px;
   color: gray;
 }
@@ -237,7 +249,7 @@ span {
 }
 
 .blueLine{
-  background: rgb(245, 177, 32);
+  background: rgba(9, 158, 215, 0.8);
   width: 150px;
   height: 3px;
   margin-bottom: 15px;
@@ -247,7 +259,7 @@ span {
 }
 
 .sectionX {
-  width:70%;
+  width: 95%;
   height: auto;
   justify-content: center;
   margin: 10px;
@@ -256,7 +268,6 @@ span {
   background-color: white;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 18px;
 }
 
 .sectionX:hover {
@@ -293,7 +304,7 @@ span {
 }
 
 .adress {
-  color: white;
+  color: rgba(9, 158, 215, 0.8);
 
 }
 
@@ -306,6 +317,89 @@ span {
   //margin-left: 100px;
 
 }
+
+//style dla pojedynczej strony
+
+
+.singlePage {
+  background-color: rgb(249, 249, 249);
+  padding: 0;
+}
+
+.singlePageContainer {
+  width: 90%;
+  margin: 0 auto;
+
+
+}
+
+.singlePage h2 {
+  margin-top: 0 auto;
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+
+}
+.singlePage .blueLine {
+  margin: 0 auto;
+  width: 300px;
+  margin-bottom: 50px;
+
+}
+
+
+.adressData {
+  padding: 10px;
+  margin: 0 auto;
+}
+
+
+
+.front {
+  background-color: #e5e5e5;
+}
+
+
+//glupi reset stylowania boxa
+.att {
+  //border: 1px solid red;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.att:hover .blueLine {
+  margin-left: 290px;
+
+
+}
+
+.att:hover h2 {
+  margin-left: 10px;
+}
+
+#erka {
+  font-size: 170px;
+  margin: 0;
+  padding: 15px;
+  padding-top: 30px;
+}
+
+.blueLineOther {
+  margin: 0 auto;
+  background: rgba(9, 158, 215, 0.8);
+  width: 300px;
+  height: 3px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  -webkit-transition: 0.4s; /* Safari */
+  transition: all 0.4s;}
+
+
+//*********************MEDIA*******************
+
+
+
+
 
 @media only screen and (min-width: 768px) {
 
@@ -326,13 +420,14 @@ span {
   }
 
   .slider {
-    margin-left: 150px;
+    margin-left: 30px;
     width: 400px;
     height: 300px;
   }
   .slide {
     font-size: 60px;
-    padding-top: 70px;
+    padding-top: 30px;
+    margin-left: 30px;
   }
 
   span {
@@ -367,7 +462,7 @@ span {
 
   }
   .fullMenu li{
-    color: rgb(245, 177, 32);
+    color: rgba(9, 158, 215, 0.8);
     list-style: none;
     font-size: 14px;
     padding-top: 10px;
@@ -377,71 +472,22 @@ span {
     margin: 0;
   }
   .fullMenu li:hover {
-    background-color: rgba(245, 177, 32, 0.6);
+    background-color: rgba(59, 220, 239, 0.6);
   }
   .about {
     cursor: pointer;
   }
-}
 
-//style dla pojedynczej strony
+  .sectionX {
+    width: 70%;
 
+  }
 
-.singlePage {
-  background-color: #e5e5e5;
-  padding: 10px;
-}
-
-.singlePageContainer {
-  width: 90%;
-  margin: 0 auto;
-
-
-}
-
-.singlePage h2 {
-  margin-top: 0 auto;
-  display: flex;
-  justify-content: center;
-  font-size: 2em;
-
-}
-.singlePage .blueLine {
-margin: 0 auto;
-width: 300px;
-  margin-bottom: 50px;
+  .singlePage {
+    background-color: rgb(249, 249, 249);
+    padding: 10px;
+  }
 
 }
 
 
-.adressData {
-  padding: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-
-
-
-.front {
-  background-color: #e5e5e5;
-}
-
-
-//glupi reset stylowania boxa
-.att {
-  //border: 1px solid red;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.att:hover .blueLine {
-margin-left: 290px;
-
-
-}
-
-.att:hover h2 {
-  margin-left: 10px;
-}
