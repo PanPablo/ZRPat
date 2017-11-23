@@ -119,7 +119,7 @@ a:active {
 }
 
 .header {
-  background: rgba(211, 211, 211, 0.7);
+  background: rgba(209, 209, 209, 0.7);
   height: 60px;
 }
 
@@ -135,14 +135,14 @@ a:active {
 
 .logo {
   font-weight: lighter;
-  color: rgba(9, 158, 215, 0.8);
+  color: rgba(9, 158, 215, 1);
   font-size: 0.9em;
   margin-left: 10px;
 
 }
 .menu {
   opacity: 1;
-  color: rgba(9, 158, 215, 0.8);
+  color: rgba(9, 158, 215, 1);
   font-size: 0.8em;
   display: none;
 }
@@ -304,7 +304,7 @@ span {
 }
 
 .adress {
-  color: rgba(9, 158, 215, 0.8);
+  color: rgba(9, 158, 215, 1);
 
 }
 
@@ -443,7 +443,7 @@ span {
     position: absolute;
     top:60px;
     right: 160px;
-    background-color: rgba(211, 211, 211, 0.7);
+    background-color: rgba(209, 209, 209, 0.7);
     width: 150px;
     height: 160px;
     display: inline-block;
@@ -462,7 +462,7 @@ span {
 
   }
   .fullMenu li{
-    color: rgba(9, 158, 215, 0.8);
+    color: rgba(9, 158, 215, 1);
     list-style: none;
     font-size: 14px;
     padding-top: 10px;
