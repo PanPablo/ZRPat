@@ -15,7 +15,7 @@
             <div class="section1 parallax">
                 <div class="header">
                     <div class="nav">
-                        <div class="logo"><a href="http://localhost/zrpat/"> ZESPÓŁ RZECZNIKÓW<br>PATENTOWYCH</a></div>
+                        <div class="logo"><a href="http://165.227.175.1"> ZESPÓŁ RZECZNIKÓW<br>PATENTOWYCH</a></div>
                         <div class="menu">
 <!--                            --><?php //wp_nav_menu(['menu' => 'main']); ?>
                             <ul>
