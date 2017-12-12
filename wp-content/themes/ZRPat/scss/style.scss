@@ -1,7 +1,6 @@
 @import "_grid.scss";
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Raleway:800');
-@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
 
 @for $i from 1 through 6 {
   .section#{$i} {
@@ -181,12 +180,17 @@ a:visited {
 
 .slider {
   width: 300px;
-  height: 300px;
+  height: 150px;
   position:relative;
   -webkit-transition: opacity 1s;
   -moz-transition: opacity 1s;
   -o-transition: opacity 1s;
   transition: opacity 1s;
+  background-color: rgba(251, 251, 251, 0.5);
+  margin-top: 50px;
+  border-radius: 15px 15px;
+  margin-left: 10px;
+
 }
 
 .sliderHiden {
@@ -194,10 +198,10 @@ a:visited {
 }
 
 .slide {
-  font-family: 'Fredericka the Great', cursive;
-  color: rgba(5, 61, 199, 0.7);
+  font-family: 'Raleway', sans-serif;
+  color: rgba(9, 158, 215, 0.8);
   font-size: 35px;
-  font-weight: 500;
+  font-weight: 700;
   list-style: none;
   opacity: 0;
   z-index: 1;
@@ -208,8 +212,10 @@ a:visited {
   -moz-transition: opacity 1s;
   -o-transition: opacity 1s;
   transition: opacity 1s;
-
+  border-radius: 15px 15px;
+  padding: 10px;
 }
+
 
 #erka {
   font-size: 5px;
@@ -421,13 +427,14 @@ span {
 
   .slider {
     margin-left: 30px;
-    width: 400px;
-    height: 300px;
+    width: 350px;
+    height: 150px;
   }
   .slide {
-    font-size: 60px;
-    padding-top: 30px;
-    margin-left: 30px;
+    font-size: 40px;
+    //padding-top: 30px;
+
+    ;
   }
 
   span {
