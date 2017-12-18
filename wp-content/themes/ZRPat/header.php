@@ -10,7 +10,7 @@
 
 <body>
 <section class=container>
-    <div class="row">
+    <div class="row mainRow">
         <div class="col-6-6">
             <div class="section1 parallax">
                 <div class="header">
