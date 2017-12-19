@@ -10,7 +10,7 @@
 <?php get_header(); ?>
 <section class="singlePage">
     <div class="singlePageContainer">
-        <h2>Zespół Rzeczników Patentowych</h2>
+        <h2>WSPÓŁPRACA Z ZAGRANICĄ</h2>
         <div class="blueLine"></div>
         <?php
 

@@ -21,10 +21,10 @@ span {
 }
 
 a {
-  color: rgba(9, 158, 215, 0.8);
+  color: rgba(0, 127, 211, 1);
 }
 a:active {
-  color: rgba(9, 158, 215, 0.8);
+  color: rgba(0, 127, 211, 1);
 }
 //sekcja1
 
@@ -71,7 +71,7 @@ a:active {
 }
 
 .menuMobile li {
-  color: rgb(24, 74, 189);
+  color: rgba(0, 127, 211, 1);
   font-size: 1.5em;
   margin-left: 5px;
   margin-bottom: 30px;
@@ -116,6 +116,12 @@ a:active {
   background-size: cover;
 }
 
+@media only screen and (max-width: 768px) {
+  .parallax {
+    background-size: 180%;
+  }
+}
+
 .header {
   background: rgba(209, 209, 209, 0.7);
   height: 60px;
@@ -134,7 +140,7 @@ a:active {
 
 .logo {
   font-weight: lighter;
-  color: rgba(9, 158, 215, 1);
+  color: rgba(0, 127, 211, 1);
   font-size: 0.9em;
   margin-left: 10px;
 
@@ -151,7 +157,7 @@ a {
 }
 
 a:visited {
-  color: rgba(9, 158, 215, 0.8);
+  color: rgba(0, 127, 211, 1);
 }
 
 .menu ul{
@@ -189,7 +195,7 @@ a:visited {
   background-color: rgba(251, 251, 251, 0.5);
   margin-top: 50px;
   border-radius: 15px 15px;
-  margin-left: 10px;
+  margin-left: 30px;
 
 }
 
@@ -271,7 +277,7 @@ span {
   justify-content: center;
   margin: 10px;
   box-shadow: 6px 6px 8px 0 gray, 0 8px 25px 0 gray;
-  overflow: hidden;
+  overflow: auto;
   background-color: white;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -291,7 +297,7 @@ span {
 //footer
 .section5 {
   height: 100px;
-  background: black;
+  background: lightgrey;
 }
 
 .footer {
@@ -311,7 +317,7 @@ span {
 }
 
 .adress {
-  color: rgba(9, 158, 215, 1);
+  color: rgba(0, 127, 211, 1);
 
 }
 
@@ -358,6 +364,12 @@ span {
 .adressData {
   padding: 10px;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .adressData {
+    margin-bottom: 20px;
+  }
 }
 
 
