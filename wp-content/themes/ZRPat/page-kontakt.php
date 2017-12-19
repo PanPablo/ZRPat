@@ -12,11 +12,7 @@
 <h2>KONTAKT</h2>
 <div class="blueLine"></div>
 <div class="row">
-    <div class="col-3-6 test">
-     <div id="map">
-     </div>
-    </div>
-    <div class="col-3-6 test">
+    <div class="col-3-6">
 
         <?php
 
@@ -41,6 +37,10 @@
         <?php endif;
 
         ?>
+    </div>
+    <div class="col-3-6">
+        <div id="map">
+        </div>
     </div>
 </div>
 

@@ -42,10 +42,10 @@
                 </div>
                 <div class="slider">
                     <ul class="karousel">
-                        <li class="slide showing">Patenty</li>
-                        <li class="slide">Znaki<br>towarowe</li>
-                        <li class="slide">Wzory<br>przemysłowe</li>
-                        <li class="slide">Patenty<br>europejskie</li>
+                        <li class="slide showing">PATENTY</li>
+                        <li class="slide">ZNAKI<br>TOWAROWE</li>
+                        <li class="slide">WZORY<br>PRZEMYSŁOWE</li>
+                        <li class="slide">PATENY<br>EUROPEJSKIE</li>
 <!--                        <li class="slide" id="erka">&reg;</li>-->
                     </ul>
                 </div>
@@ -56,6 +56,7 @@
                         <li><a href="http://165.227.175.1/?page_id=5">KONTAKT</a></li>
                         <li><a href="http://165.227.175.1/?page_id=35">RZECZNICY</a></li>
                         <li><a href="http://165.227.175.1/?page_id=84">NASI KLIENCI</a></li>
+                        <li><a href="http://165.227.175.1/?page_id=88">WSPÓŁPRACA Z <br>ZAGRANICĄ</a></li>
                     </ul>
                 </div>
             </div>

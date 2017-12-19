@@ -60,9 +60,9 @@ a:active {
 
 .menuMobile {
   width: 250px;
-  height:330px;
+  height: 100vh;
   background-color: rgba(211, 211, 211, 0.7);
-  position:absolute;
+  position: fixed;
   top: 60px;
   right: 0px;
   margin-right: -300px;
@@ -80,7 +80,7 @@ a:active {
 }
 .menuMobileShow {
   width: 250px;
-  height:330px;
+  height: 100%;
   background-color: rgba(211, 211, 211, 0.8);
   position:fixed;
   top: 60px;
@@ -220,7 +220,7 @@ a:visited {
   font-family: 'Raleway', sans-serif;
   color: rgba(9, 158, 215, 0.8);
   font-size: 35px;
-  font-weight: 700;
+  //font-weight: 700;
   list-style: none;
   opacity: 0;
   z-index: 1;
@@ -381,15 +381,16 @@ span {
 .adressData {
   padding: 10px;
   margin: 0 auto;
+  width: 100%;
+  height: 430px;
 }
 
 @media only screen and (max-width: 768px) {
   .adressData {
     margin-bottom: 20px;
+    width: 93%;
   }
 }
-
-
 
 .front {
   background-color: #e5e5e5;
@@ -401,17 +402,37 @@ span {
   //border: 1px solid red;
   margin: 0 auto;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+.att p{
+  padding: 50px;
+  padding-bottom: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .att p{
+    padding: 15px;
+    padding-bottom: 10px;
+    width: 100%;
+  }
 }
 
 .att:hover .blueLine {
   margin-left: 290px;
 
-
 }
+
+
 
 .att:hover h2 {
   margin-left: 10px;
 }
+
 
 #erka {
   font-size: 170px;
@@ -423,10 +444,9 @@ span {
 .blueLineOther {
   margin: 0 auto;
   background: rgba(9, 158, 215, 0.8);
-  width: 300px;
+  width: 250px;
   height: 3px;
   margin-bottom: 15px;
-  margin-left: 10px;
   -webkit-transition: 0.4s; /* Safari */
   transition: all 0.4s;}
 
@@ -534,6 +554,26 @@ span {
     padding: 10px;
   }
 
+
 }
+
+//.test3 {
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//  flex-direction: row;
+//}
+
+//.test {
+//  order: 2;
+//
+//}
+//
+//.test1 {
+//  order: 1;
+
+
+
+
 
 
