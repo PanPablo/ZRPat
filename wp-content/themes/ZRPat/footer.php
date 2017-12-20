@@ -3,7 +3,7 @@
         <div class="section5">
             <div class="footer parallax">
                 <div class="footerContent">
-                    <div class="logo">Zespół Rzeczników<br>Patentowych 2017<br>Created by PabloWebDesign</div>
+                    <div class="logo">Zespół Rzeczników<br>Patentowych 2017<br>Created by <a href="https://github.com/PanPablo">PabloWebDesign</a></div>
                     <div><?php do_action('wpml_add_language_selector');?></div>
                     <div class="adress">
                         ul.Nowowiejska 1/3 lok. 9<br>

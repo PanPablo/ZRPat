@@ -9,7 +9,7 @@
 <?php get_header(); ?>
 <section class="singlePage">
     <div class="singlePageContainer">
-        <h2>RZECZNICY</h2>
+        <h2>RZECZNICY PATENTOWI</h2>
         <div class="blueLine"></div>
     <?php
 
