@@ -404,7 +404,7 @@ final class WP_Customize_Nav_Menus {
 		$temp_nav_menu_setting      = new WP_Customize_Nav_Menu_Setting( $this->manager, 'nav_menu[-1]' );
 		$temp_nav_menu_item_setting = new WP_Customize_Nav_Menu_Item_Setting( $this->manager, 'nav_menu_item[-1]' );
 
-		// Pass data to JS.
+		// Pass data to js.
 		$settings = array(
 			'allMenus'             => wp_get_nav_menus(),
 			'itemTypes'            => $this->available_item_types(),
@@ -548,7 +548,7 @@ final class WP_Customize_Nav_Menus {
 			}
 		}
 
-		// Require JS-rendered control types.
+		// Require js-rendered control types.
 		$this->manager->register_panel_type( 'WP_Customize_Nav_Menus_Panel' );
 		$this->manager->register_control_type( 'WP_Customize_Nav_Menu_Control' );
 		$this->manager->register_control_type( 'WP_Customize_Nav_Menu_Name_Control' );
@@ -667,7 +667,7 @@ final class WP_Customize_Nav_Menus {
 				) ) );
 			}
 
-			// Note: other controls inside of this section get added dynamically in JS via the MenuSection.ready() function.
+			// Note: other controls inside of this section get added dynamically in js via the MenuSection.ready() function.
 		}
 
 		// Add the add-new-menu section and controls.
@@ -896,7 +896,7 @@ final class WP_Customize_Nav_Menus {
 	/**
 	 * Print the JavaScript templates used to render Menu Customizer components.
 	 *
-	 * Templates are imported into the JS use wp.template.
+	 * Templates are imported into the js use wp.template.
 	 *
 	 * @since 4.3.0
 	 * @access public
@@ -988,7 +988,7 @@ final class WP_Customize_Nav_Menus {
 			if ( $page_item_type ) {
 				$this->print_post_type_container( $page_item_type );
 			}
-			// Containers for per-post-type item browsing; items are added with JS.
+			// Containers for per-post-type item browsing; items are added with js.
 			foreach ( $item_types as $item_type ) {
 				$this->print_post_type_container( $item_type );
 			}
@@ -1265,7 +1265,7 @@ final class WP_Customize_Nav_Menus {
 
 		/*
 		 * Replace object menu arg with a term_id menu arg, as this exports better
-		 * to JS and is easier to compare hashes.
+		 * to js and is easier to compare hashes.
 		 */
 		if ( ! empty( $exported_args['menu'] ) && is_object( $exported_args['menu'] ) ) {
 			$exported_args['menu'] = $exported_args['menu']->term_id;
@@ -1330,7 +1330,7 @@ final class WP_Customize_Nav_Menus {
 	}
 
 	/**
-	 * Exports data from PHP to JS.
+	 * Exports data from PHP to js.
 	 *
 	 * @since 4.3.0
 	 * @access public

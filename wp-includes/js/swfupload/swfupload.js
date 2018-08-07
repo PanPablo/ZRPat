@@ -320,7 +320,7 @@ SWFUpload.prototype.destroy = function () {
 		movieElement = this.getMovieElement();
 		
 		if (movieElement && typeof(movieElement.CallFunction) === "unknown") { // We only want to do this in IE
-			// Loop through all the movie's properties and remove all function references (DOM/JS IE 6/7 memory leak workaround)
+			// Loop through all the movie's properties and remove all function references (DOM/js IE 6/7 memory leak workaround)
 			for (var i in movieElement) {
 				try {
 					if (typeof(movieElement[i]) === "function") {
@@ -772,7 +772,7 @@ SWFUpload.prototype.unescapeFilePostParams = function (file) {
 	return file;
 };
 
-// Private: Called by Flash to see if JS can call in to Flash (test if External Interface is working)
+// Private: Called by Flash to see if js can call in to Flash (test if External Interface is working)
 SWFUpload.prototype.testExternalInterface = function () {
 	try {
 		return this.callFlash("TestExternalInterface");

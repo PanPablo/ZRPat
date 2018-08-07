@@ -1543,7 +1543,7 @@ function wp_check_browser_version() {
 }
 
 /**
- * Empty function usable by plugins to output empty dashboard widget (to be populated later by JS).
+ * Empty function usable by plugins to output empty dashboard widget (to be populated later by js).
  */
 function wp_dashboard_empty() {}
 

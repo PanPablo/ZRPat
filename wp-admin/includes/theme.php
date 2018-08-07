@@ -172,7 +172,7 @@ function get_theme_update_available( $theme ) {
 	if ( isset($themes_update->response[ $stylesheet ]) ) {
 		$update = $themes_update->response[ $stylesheet ];
 		$theme_name = $theme->display('Name');
-		$details_url = add_query_arg(array('TB_iframe' => 'true', 'width' => 1024, 'height' => 800), $update['url']); //Theme browser inside WP? replace this, Also, theme preview JS will override this on the available list.
+		$details_url = add_query_arg(array('TB_iframe' => 'true', 'width' => 1024, 'height' => 800), $update['url']); //Theme browser inside WP? replace this, Also, theme preview js will override this on the available list.
 		$update_url = wp_nonce_url( admin_url( 'update.php?action=upgrade-theme&amp;theme=' . urlencode( $stylesheet ) ), 'upgrade-theme_' . $stylesheet );
 
 		if ( !is_multisite() ) {
@@ -626,7 +626,7 @@ function wp_prepare_themes_for_js( $themes = null ) {
 }
 
 /**
- * Print JS templates for the theme-browsing UI in the Customizer.
+ * Print js templates for the theme-browsing UI in the Customizer.
  *
  * @since 4.2.0
  */

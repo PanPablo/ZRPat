@@ -318,14 +318,14 @@ class WP_Customize_Section {
 	/**
 	 * Render the section UI in a subclass.
 	 *
-	 * Sections are now rendered in JS by default, see WP_Customize_Section::print_template().
+	 * Sections are now rendered in js by default, see WP_Customize_Section::print_template().
 	 *
 	 * @since 3.4.0
 	 */
 	protected function render() {}
 
 	/**
-	 * Render the section's JS template.
+	 * Render the section's js template.
 	 *
 	 * This function is only run for section types that have been registered with
 	 * WP_Customize_Manager::register_section_type().
@@ -344,9 +344,9 @@ class WP_Customize_Section {
 	}
 
 	/**
-	 * An Underscore (JS) template for rendering this section.
+	 * An Underscore (js) template for rendering this section.
 	 *
-	 * Class variables for this section class are available in the `data` JS object;
+	 * Class variables for this section class are available in the `data` js object;
 	 * export custom variables by overriding WP_Customize_Section::json().
 	 *
 	 * @since 4.3.0

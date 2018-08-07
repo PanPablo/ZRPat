@@ -3895,7 +3895,7 @@ function htmlentities2( $myHTML ) {
 /**
  * Escape single quotes, htmlspecialchar " < > &, and fix line endings.
  *
- * Escapes text strings for echoing in JS. It is intended to be used for inline JS
+ * Escapes text strings for echoing in js. It is intended to be used for inline js
  * (in a tag attribute, for example onclick="..."). Note that the strings have to
  * be in single quotes. The {@see 'js_escape'} filter is also applied here.
  *

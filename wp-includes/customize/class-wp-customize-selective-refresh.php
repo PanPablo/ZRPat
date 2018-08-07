@@ -218,7 +218,7 @@ final class WP_Customize_Selective_Refresh {
 			'l10n'           => $l10n,
 		);
 
-		// Export data to JS.
+		// Export data to js.
 		echo sprintf( '<script>var _customizePartialRefreshExports = %s;</script>', wp_json_encode( $exports ) );
 	}
 
@@ -439,7 +439,7 @@ final class WP_Customize_Selective_Refresh {
 		 *
 		 * Plugins may use this filter to inject `$scripts` and `$styles`, which are dependencies
 		 * for the partials being rendered. The response data will be available to the client via
-		 * the `render-partials-response` JS event, so the client can then inject the scripts and
+		 * the `render-partials-response` js event, so the client can then inject the scripts and
 		 * styles into the DOM if they have not already been enqueued there.
 		 *
 		 * If plugins do this, they'll need to take care for any scripts that do `document.write()`

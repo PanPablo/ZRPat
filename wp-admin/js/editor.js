@@ -145,7 +145,7 @@ window.wp = window.wp || {};
 
 					editor.hide();
 				} else {
-					// There is probably a JS error on the page. The TinyMCE editor instance doesn't exist. Show the textarea.
+					// There is probably a js error on the page. The TinyMCE editor instance doesn't exist. Show the textarea.
 					$textarea.css({ 'display': '', 'visibility': '' });
 				}
 

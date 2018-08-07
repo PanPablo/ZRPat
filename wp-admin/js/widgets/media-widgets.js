@@ -380,7 +380,7 @@ wp.mediaWidgets = ( function( $ ) {
 		 * Translation strings.
 		 *
 		 * The mapping of translation strings is handled by media widget subclasses,
-		 * exported from PHP to JS such as is done in WP_Widget_Media_Image::enqueue_admin_scripts().
+		 * exported from PHP to js such as is done in WP_Widget_Media_Image::enqueue_admin_scripts().
 		 *
 		 * @type {Object}
 		 */
@@ -392,7 +392,7 @@ wp.mediaWidgets = ( function( $ ) {
 		/**
 		 * Widget ID base.
 		 *
-		 * This may be defined by the subclass. It may be exported from PHP to JS
+		 * This may be defined by the subclass. It may be exported from PHP to js
 		 * such as is done in WP_Widget_Media_Image::enqueue_admin_scripts(). If not,
 		 * it will attempt to be discovered by looking to see if this control
 		 * instance extends each member of component.controlConstructors, and if
@@ -405,7 +405,7 @@ wp.mediaWidgets = ( function( $ ) {
 		/**
 		 * Mime type.
 		 *
-		 * This must be defined by the subclass. It may be exported from PHP to JS
+		 * This must be defined by the subclass. It may be exported from PHP to js
 		 * such as is done in WP_Widget_Media_Image::enqueue_admin_scripts().
 		 *
 		 * @type {string}
@@ -489,7 +489,7 @@ wp.mediaWidgets = ( function( $ ) {
 
 			/*
 			 * Sync the widget instance model attributes onto the hidden inputs that widgets currently use to store the state.
-			 * In the future, when widgets are JS-driven, the underlying widget instance data should be exposed as a model
+			 * In the future, when widgets are js-driven, the underlying widget instance data should be exposed as a model
 			 * from the start, without having to sync with hidden fields. See <https://core.trac.wordpress.org/ticket/33507>.
 			 */
 			control.listenTo( control.model, 'change', control.syncModelToInputs );
@@ -903,7 +903,7 @@ wp.mediaWidgets = ( function( $ ) {
 		 * Instance schema.
 		 *
 		 * This adheres to JSON Schema and subclasses should have their schema
-		 * exported from PHP to JS such as is done in WP_Widget_Media_Image::enqueue_admin_scripts().
+		 * exported from PHP to js such as is done in WP_Widget_Media_Image::enqueue_admin_scripts().
 		 *
 		 * @type {Object.<string, Object>}
 		 */
@@ -1041,8 +1041,8 @@ wp.mediaWidgets = ( function( $ ) {
 		 * by PHP, where each widget update cause the entire element to be emptied
 		 * and replaced with the rendered output of WP_Widget::form() which is
 		 * sent back in Ajax request made to save/update the widget instance.
-		 * To prevent a "flash of replaced DOM elements and re-initialized JS
-		 * components", the JS template is rendered outside of the normal form
+		 * To prevent a "flash of replaced DOM elements and re-initialized js
+		 * components", the js template is rendered outside of the normal form
 		 * container.
 		 */
 		fieldContainer = $( '<div></div>' );
@@ -1051,7 +1051,7 @@ wp.mediaWidgets = ( function( $ ) {
 
 		/*
 		 * Sync the widget instance model attributes onto the hidden inputs that widgets currently use to store the state.
-		 * In the future, when widgets are JS-driven, the underlying widget instance data should be exposed as a model
+		 * In the future, when widgets are js-driven, the underlying widget instance data should be exposed as a model
 		 * from the start, without having to sync with hidden fields. See <https://core.trac.wordpress.org/ticket/33507>.
 		 */
 		modelAttributes = {};
@@ -1175,7 +1175,7 @@ wp.mediaWidgets = ( function( $ ) {
 	/**
 	 * Initialize functionality.
 	 *
-	 * This function exists to prevent the JS file from having to boot itself.
+	 * This function exists to prevent the js file from having to boot itself.
 	 * When WordPress enqueues this script, it should have an inline script
 	 * attached which calls wp.mediaWidgets.init().
 	 *

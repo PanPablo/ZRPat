@@ -215,7 +215,7 @@ jQuery( function( $ ) {
 			 * When JavaScript is disabled, the errors container is shown, so
 			 * that "This widget requires JavaScript" message can be seen.
 			 *
-			 * When JS is enabled, the container is hidden at first, and then
+			 * When js is enabled, the container is hidden at first, and then
 			 * revealed during the template rendering, if there actually are
 			 * errors to show.
 			 *

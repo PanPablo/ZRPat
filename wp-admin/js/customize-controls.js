@@ -425,7 +425,7 @@
 		 * @param {string=}        [options.params.description] - Description shown at the top of the panel.
 		 * @param {number=100}     [options.params.priority] - The sort priority for the panel.
 		 * @param {string=default} [options.params.type] - The type of the panel. See wp.customize.panelConstructor.
-		 * @param {string=}        [options.params.content] - The markup to be used for the panel container. If empty, a JS template is used.
+		 * @param {string=}        [options.params.content] - The markup to be used for the panel container. If empty, a js template is used.
 		 * @param {boolean=true}   [options.params.active] - Whether the panel is active or not.
 		 */
 		initialize: function ( id, options ) {
@@ -765,7 +765,7 @@
 		focus: focus,
 
 		/**
-		 * Return the container html, generated from its JS template, if it exists.
+		 * Return the container html, generated from its js template, if it exists.
 		 *
 		 * @since 4.3.0
 		 */
@@ -850,7 +850,7 @@
 		 * @param {string=}        [options.params.description] - Description shown at the top of the section.
 		 * @param {number=100}     [options.params.priority] - The sort priority for the section.
 		 * @param {string=default} [options.params.type] - The type of the section. See wp.customize.sectionConstructor.
-		 * @param {string=}        [options.params.content] - The markup to be used for the section container. If empty, a JS template is used.
+		 * @param {string=}        [options.params.content] - The markup to be used for the section container. If empty, a js template is used.
 		 * @param {boolean=true}   [options.params.active] - Whether the section is active or not.
 		 * @param {string}         options.params.panel - The ID for the panel this section is associated with.
 		 * @param {string=}        [options.params.customizeAction] - Additional context information shown before the section title when expanded.
@@ -1591,7 +1591,7 @@
 		 * @param {string=}        [options.params.description] - Description shown at the top of the panel.
 		 * @param {number=100}     [options.params.priority] - The sort priority for the panel.
 		 * @param {string=default} [options.params.type] - The type of the panel. See wp.customize.panelConstructor.
-		 * @param {string=}        [options.params.content] - The markup to be used for the panel container. If empty, a JS template is used.
+		 * @param {string=}        [options.params.content] - The markup to be used for the panel container. If empty, a js template is used.
 		 * @param {boolean=true}   [options.params.active] - Whether the panel is active or not.
 		 */
 		initialize: function ( id, options ) {
@@ -1807,7 +1807,7 @@
 		},
 
 		/**
-		 * Render the panel from its JS template, if it exists.
+		 * Render the panel from its js template, if it exists.
 		 *
 		 * The panel's container must already exist in the DOM.
 		 *
@@ -2022,7 +2022,7 @@
 			var control = this, newItem;
 			if ( 'dropdown-pages' === control.params.type && control.params.allow_addition ) {
 				newItem = control.container.find( '.new-content-item' );
-				newItem.hide(); // Hide in JS to preserve flex display when showing.
+				newItem.hide(); // Hide in js to preserve flex display when showing.
 				control.container.on( 'click', '.add-new-toggle', function( e ) {
 					$( e.currentTarget ).slideUp( 180 );
 					newItem.slideDown( 180 );
@@ -2238,7 +2238,7 @@
 		},
 
 		/**
-		 * Render the control from its JS template, if it exists.
+		 * Render the control from its js template, if it exists.
 		 *
 		 * The control's container must already exist in the DOM.
 		 *
@@ -2623,7 +2623,7 @@
 	 * A control for uploading images.
 	 *
 	 * This control no longer needs to do anything more
-	 * than what the upload control does in JS.
+	 * than what the upload control does in js.
 	 *
 	 * @class
 	 * @augments wp.customize.UploadControl
@@ -3858,14 +3858,14 @@
 					var isDynamicallyCreated = _.isUndefined( api.settings[ type + 's' ][ id ] );
 
 					/*
-					 * If the construct was created statically in PHP (not dynamically in JS)
+					 * If the construct was created statically in PHP (not dynamically in js)
 					 * then consider a missing (undefined) value in the activeConstructs to
 					 * mean it should be deactivated (since it is gone). But if it is
 					 * dynamically created then only toggle activation if the value is defined,
 					 * as this means that the construct was also then correspondingly
 					 * created statically in PHP and the active callback is available.
 					 * Otherwise, dynamically-created constructs should normally have
-					 * their active states toggled in JS rather than from PHP.
+					 * their active states toggled in js rather than from PHP.
 					 */
 					if ( ! isDynamicallyCreated || ! _.isUndefined( activeConstructs[ id ] ) ) {
 						if ( activeConstructs[ id ] ) {

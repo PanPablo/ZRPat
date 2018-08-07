@@ -137,7 +137,7 @@ class WP_Customize_Media_Control extends WP_Customize_Control {
 	public function render_content() {}
 
 	/**
-	 * Render a JS template for the content of the media control.
+	 * Render a js template for the content of the media control.
 	 *
 	 * @since 4.1.0
 	 * @since 4.2.0 Moved from WP_Customize_Upload_Control.

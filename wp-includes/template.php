@@ -194,7 +194,7 @@ function get_author_template() {
  *
  * An example of this is:
  *
- * 1. category-news.php
+ * 1. category-news.blade.php
  * 2. category-2.php
  * 3. category.php
  *

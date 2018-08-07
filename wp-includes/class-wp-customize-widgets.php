@@ -736,8 +736,8 @@ final class WP_Customize_Widgets {
 		);
 
 		/*
-		 * Gather all strings in PHP that may be needed by JS on the client.
-		 * Once JS i18n is implemented (in #20491), this can be removed.
+		 * Gather all strings in PHP that may be needed by js on the client.
+		 * Once js i18n is implemented (in #20491), this can be removed.
 		 */
 		$some_non_rendered_areas_messages = array();
 		$some_non_rendered_areas_messages[1] = html_entity_decode(

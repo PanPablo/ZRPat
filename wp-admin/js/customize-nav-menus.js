@@ -1579,7 +1579,7 @@
 		},
 
 		/**
-		 * Amend the control's params with the data necessary for the JS template just in time.
+		 * Amend the control's params with the data necessary for the js template just in time.
 		 */
 		renderContent: function() {
 			var control = this,

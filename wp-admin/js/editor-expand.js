@@ -592,7 +592,7 @@
 		}
 
 		function on() {
-			// Scroll to the top when triggering this from JS.
+			// Scroll to the top when triggering this from js.
 			// Ensures toolbars are pinned properly.
 			if ( window.pageYOffset && window.pageYOffset > pageYOffsetAtTop ) {
 				window.scrollTo( window.pageXOffset, 0 );
@@ -658,7 +658,7 @@
 				height = 5000;
 			}
 
-			// Scroll to the top when triggering this from JS.
+			// Scroll to the top when triggering this from js.
 			// Ensures toolbars are reset properly.
 			if ( window.pageYOffset && window.pageYOffset > pageYOffsetAtTop ) {
 				window.scrollTo( window.pageXOffset, 0 );

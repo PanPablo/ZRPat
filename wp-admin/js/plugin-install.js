@@ -159,7 +159,7 @@ jQuery( document ).ready( function( $ ) {
 		tbWindow.find( '#TB_iframeContent' ).attr( 'title', title );
 	});
 
-	/* Plugin install related JS */
+	/* Plugin install related js */
 	$( '#plugin-information-tabs a' ).click( function( event ) {
 		var tab = $( this ).attr( 'name' );
 		event.preventDefault();

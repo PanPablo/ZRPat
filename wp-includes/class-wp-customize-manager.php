@@ -2052,10 +2052,10 @@ final class WP_Customize_Manager {
 	}
 
 	/**
-	 * Prepares setting validity for exporting to the client (JS).
+	 * Prepares setting validity for exporting to the client (js).
 	 *
 	 * Converts `WP_Error` instance into array suitable for passing into the
-	 * `wp.customize.Notification` JS model.
+	 * `wp.customize.Notification` js model.
 	 *
 	 * @since 4.6.0
 	 * @access public
@@ -2063,7 +2063,7 @@ final class WP_Customize_Manager {
 	 * @param true|WP_Error $validity Setting validity.
 	 * @return true|array If `$validity` was a WP_Error, the error codes will be array-mapped
 	 *                    to their respective `message` and `data` to pass into the
-	 *                    `wp.customize.Notification` JS model.
+	 *                    `wp.customize.Notification` js model.
 	 */
 	public function prepare_setting_validity_for_js( $validity ) {
 		if ( is_wp_error( $validity ) ) {

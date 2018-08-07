@@ -58,9 +58,9 @@ class WP_Customize_Nav_Menus_Panel extends WP_Customize_Panel {
 	}
 
 	/**
-	 * An Underscore (JS) template for this panel's content (but not its container).
+	 * An Underscore (js) template for this panel's content (but not its container).
 	 *
-	 * Class variables for this panel class are available in the `data` JS object;
+	 * Class variables for this panel class are available in the `data` js object;
 	 * export custom variables by overriding WP_Customize_Panel::json().
 	 *
 	 * @since 4.3.0

@@ -300,7 +300,7 @@ class WP_Customize_Panel {
 	/**
 	 * Render the panel container, and then its contents (via `this->render_content()`) in a subclass.
 	 *
-	 * Panel containers are now rendered in JS by default, see WP_Customize_Panel::print_template().
+	 * Panel containers are now rendered in js by default, see WP_Customize_Panel::print_template().
 	 *
 	 * @since 4.0.0
 	 * @access protected
@@ -310,7 +310,7 @@ class WP_Customize_Panel {
 	/**
 	 * Render the panel UI in a subclass.
 	 *
-	 * Panel contents are now rendered in JS by default, see WP_Customize_Panel::print_template().
+	 * Panel contents are now rendered in js by default, see WP_Customize_Panel::print_template().
 	 *
 	 * @since 4.1.0
 	 * @access protected
@@ -318,7 +318,7 @@ class WP_Customize_Panel {
 	protected function render_content() {}
 
 	/**
-	 * Render the panel's JS templates.
+	 * Render the panel's js templates.
 	 *
 	 * This function is only run for panel types that have been registered with
 	 * WP_Customize_Manager::register_panel_type().
@@ -339,9 +339,9 @@ class WP_Customize_Panel {
 	}
 
 	/**
-	 * An Underscore (JS) template for rendering this panel's container.
+	 * An Underscore (js) template for rendering this panel's container.
 	 *
-	 * Class variables for this panel class are available in the `data` JS object;
+	 * Class variables for this panel class are available in the `data` js object;
 	 * export custom variables by overriding WP_Customize_Panel::json().
 	 *
 	 * @see WP_Customize_Panel::print_template()
@@ -362,9 +362,9 @@ class WP_Customize_Panel {
 	}
 
 	/**
-	 * An Underscore (JS) template for this panel's content (but not its container).
+	 * An Underscore (js) template for this panel's content (but not its container).
 	 *
-	 * Class variables for this panel class are available in the `data` JS object;
+	 * Class variables for this panel class are available in the `data` js object;
 	 * export custom variables by overriding WP_Customize_Panel::json().
 	 *
 	 * @see WP_Customize_Panel::print_template()

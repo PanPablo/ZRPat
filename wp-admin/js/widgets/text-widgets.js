@@ -185,7 +185,7 @@ wp.textWidgets = ( function( $ ) {
 					 * state during the time between the change event is triggered and updateWidget
 					 * logic starts. Note that the debounced update-widget request should be able
 					 * to be removed with the removal of the update-widget request entirely once
-					 * widgets are able to mutate their own instance props directly in JS without
+					 * widgets are able to mutate their own instance props directly in js without
 					 * having to make server round-trips to call the respective WP_Widget::update()
 					 * callbacks. See <https://core.trac.wordpress.org/ticket/33507>.
 					 */
@@ -379,8 +379,8 @@ wp.textWidgets = ( function( $ ) {
 		 * by PHP, where each widget update cause the entire element to be emptied
 		 * and replaced with the rendered output of WP_Widget::form() which is
 		 * sent back in Ajax request made to save/update the widget instance.
-		 * To prevent a "flash of replaced DOM elements and re-initialized JS
-		 * components", the JS template is rendered outside of the normal form
+		 * To prevent a "flash of replaced DOM elements and re-initialized js
+		 * components", the js template is rendered outside of the normal form
 		 * container.
 		 */
 		fieldContainer = $( '<div></div>' );
@@ -477,7 +477,7 @@ wp.textWidgets = ( function( $ ) {
 	/**
 	 * Initialize functionality.
 	 *
-	 * This function exists to prevent the JS file from having to boot itself.
+	 * This function exists to prevent the js file from having to boot itself.
 	 * When WordPress enqueues this script, it should have an inline script
 	 * attached which calls wp.textWidgets.init().
 	 *

@@ -339,7 +339,7 @@ add_action( 'attachment_updated', 'wp_check_for_changed_slugs', 12, 3 );
 // Nonce check for Post Previews
 add_action( 'init', '_show_post_preview' );
 
-// Output JS to reset window.name for previews
+// Output js to reset window.name for previews
 add_action( 'wp_head', 'wp_post_preview_js', 1 );
 
 // Timezone

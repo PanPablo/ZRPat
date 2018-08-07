@@ -26,7 +26,7 @@ class WP_Customize_Background_Position_Control extends WP_Customize_Control {
 	public $type = 'background_position';
 
 	/**
-	 * Don't render the control content from PHP, as it's rendered via JS on load.
+	 * Don't render the control content from PHP, as it's rendered via js on load.
 	 *
 	 * @since 4.7.0
 	 * @access public
@@ -34,7 +34,7 @@ class WP_Customize_Background_Position_Control extends WP_Customize_Control {
 	public function render_content() {}
 
 	/**
-	 * Render a JS template for the content of the position control.
+	 * Render a js template for the content of the position control.
 	 *
 	 * @since 4.7.0
 	 * @access public

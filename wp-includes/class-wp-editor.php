@@ -1312,7 +1312,7 @@ final class _WP_Editors {
 
 	/**
 	 * Translates the default TinyMCE strings and returns them as JSON encoded object ready to be loaded with tinymce.addI18n(),
-	 * or as JS snippet that should run after tinymce.js is loaded.
+	 * or as js snippet that should run after tinymce.js is loaded.
 	 *
 	 * @static
 	 * @param string $mce_locale The locale used for the editor.

@@ -145,7 +145,7 @@
 				return;
 			}
 
-			// Allow internal jump links and JS links to behave normally without preventing default.
+			// Allow internal jump links and js links to behave normally without preventing default.
 			isInternalJumpLink = ( '#' === link.attr( 'href' ).substr( 0, 1 ) );
 			if ( isInternalJumpLink || ! /^https?:$/.test( link.prop( 'protocol' ) ) ) {
 				return;
@@ -197,7 +197,7 @@
 
 			/*
 			 * If the default wasn't prevented already (in which case the form
-			 * submission is already being handled by JS), and if it has a GET
+			 * submission is already being handled by js), and if it has a GET
 			 * request method, then take the serialized form data and add it as
 			 * a query string to the action URL and send this in a url message
 			 * to the customizer pane so that it will be loaded. If the form's
@@ -214,7 +214,7 @@
 				preview.send( 'url', urlParser.href );
 			}
 
-			// Prevent default since navigation should be done via sending url message or via JS submit handler.
+			// Prevent default since navigation should be done via sending url message or via js submit handler.
 			event.preventDefault();
 		}
 	});
@@ -715,9 +715,9 @@
 			/*
 			 * Delete any settings that already exist locally which haven't been
 			 * modified in the controls while the preview was loading. This prevents
-			 * situations where the JS value being synced from the pane may differ
-			 * from the PHP-sanitized JS value in the preview which causes the
-			 * non-sanitized JS value to clobber the PHP-sanitized value. This
+			 * situations where the js value being synced from the pane may differ
+			 * from the PHP-sanitized js value in the preview which causes the
+			 * non-sanitized js value to clobber the PHP-sanitized value. This
 			 * is particularly important for selective refresh partials that
 			 * have a fallback refresh behavior since infinite refreshing would
 			 * result.
@@ -800,7 +800,7 @@
 			settingValidities: api.settings.settingValidities
 		} );
 
-		// Send ready when URL changes via JS.
+		// Send ready when URL changes via js.
 		setInterval( api.keepAliveCurrentUrl, api.settings.timeouts.keepAliveSend );
 
 		// Display a loading indicator when preview is reloading, and remove on failure.

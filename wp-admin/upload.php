@@ -28,7 +28,7 @@ if ( 'grid' === $mode ) {
 	remove_action( 'admin_head', 'wp_admin_canonical_url' );
 
 	$q = $_GET;
-	// let JS handle this
+	// let js handle this
 	unset( $q['s'] );
 	$vars = wp_edit_attachments_query_vars( $q );
 	$ignore = array( 'mode', 'post_type', 'post_status', 'posts_per_page' );

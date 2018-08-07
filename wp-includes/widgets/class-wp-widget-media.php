@@ -307,7 +307,7 @@ abstract class WP_Widget_Media extends WP_Widget {
 	 * @since 4.8.0
 	 * @access public
 	 *
-	 * @see \WP_Widget_Media::render_control_template_scripts() Where the JS template is located.
+	 * @see \WP_Widget_Media::render_control_template_scripts() Where the js template is located.
 	 * @param array $instance Current settings.
 	 * @return void
 	 */

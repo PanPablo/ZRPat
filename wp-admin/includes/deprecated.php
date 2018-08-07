@@ -775,7 +775,7 @@ function wp_preload_dialogs() {
 }
 
 /**
- * Prints TinyMCE editor JS.
+ * Prints TinyMCE editor js.
  *
  * @deprecated 3.3.0 Use wp_editor()
  * @see wp_editor()

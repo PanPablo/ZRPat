@@ -1072,7 +1072,7 @@ module.exports = ImageDetails;
  * @param {wp.media.model.Attachments}      [attributes.library]                 The attachments collection to browse.
  *                                                                               If one is not supplied, a collection of all attachments will be created.
  * @param {wp.media.model.Selection|object} [attributes.selection]               A collection to contain attachment selections within the state.
- *                                                                               If the 'selection' attribute is a plain JS object,
+ *                                                                               If the 'selection' attribute is a plain js object,
  *                                                                               a Selection will be created using its values as the selection instance's `props` model.
  *                                                                               Otherwise, it will copy the library's `props` model.
  * @param {boolean}                         [attributes.multiple=false]          Whether multi-select is enabled.

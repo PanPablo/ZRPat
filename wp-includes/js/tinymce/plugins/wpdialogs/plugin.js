@@ -2,7 +2,7 @@
 /**
  * Included for back-compat.
  * The default WindowManager in TinyMCE 4.0 supports three types of dialogs:
- *	- With HTML created from JS.
+ *	- With HTML created from js.
  *	- With inline HTML (like WPWindowManager).
  *	- Old type iframe based dialogs.
  * For examples see the default plugins: https://github.com/tinymce/tinymce/tree/master/js/tinymce/plugins
