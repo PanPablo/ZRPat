@@ -27,8 +27,8 @@
                                 <ul>
                                     <li><a href="http://165.227.175.1/?page_id=35">Rzecznicy</a></li>
                                     <li><a href="http://165.227.175.1/?page_id=51">O Nas</a></li>
-                                    <li><a href="http://165.227.175.1/?page_id=84">Nasi klienci</a></li>
-                                    <li><a href="http://165.227.175.1/?page_id=88">Wspópraca z zagranicą</a></li>
+<!--                                    <li><a href="http://165.227.175.1/?page_id=84">Nasi klienci</a></li>-->
+<!--                                    <li><a href="http://165.227.175.1/?page_id=88">Wspópraca z zagranicą</a></li>-->
                                 </ul>
                             </div>
                         </div>
@@ -55,8 +55,8 @@
                         <li><a href="http://165.227.175.1/?page_id=93">USŁUGI</a></li>
                         <li><a href="http://165.227.175.1/?page_id=5">KONTAKT</a></li>
                         <li><a href="http://165.227.175.1/?page_id=35">RZECZNICY</a></li>
-                        <li><a href="http://165.227.175.1/?page_id=84">NASI KLIENCI</a></li>
-                        <li><a href="http://165.227.175.1/?page_id=88">WSPÓŁPRACA Z <br>ZAGRANICĄ</a></li>
+<!--                        <li><a href="http://165.227.175.1/?page_id=84">NASI KLIENCI</a></li>-->
+<!--                        <li><a href="http://165.227.175.1/?page_id=88">WSPÓŁPRACA Z <br>ZAGRANICĄ</a></li>-->
                     </ul>
                 </div>
             </div>
